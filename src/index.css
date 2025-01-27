@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.btn {
+  @apply bg-[#fefae0] px-6 py-3 rounded-lg font-semibold cursor-pointer;
+}
