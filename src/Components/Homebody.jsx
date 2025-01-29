@@ -1,6 +1,7 @@
 import snoopy1 from "../assets/snoopy2.jpg";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import GlitchEffect from "./GlitchEffect";
+import { Typewriter } from "react-simple-typewriter";
 
 function Homebody() {
   return (
@@ -17,6 +18,27 @@ function Homebody() {
           </motion.h1>
           <div>
             <GlitchEffect></GlitchEffect>
+          </div>
+          <div className="flex gap-x-2">
+            <p className="text-3xl font-bold ml-[15px]">I am a</p>
+            <h1 className="text-3xl font-bold">
+              <span className="text-[#d4a373]">
+                <Typewriter
+                  words={[
+                    "Coder!",
+                    "Full-Stack Developer",
+                    "Builder, Creator, Innovator",
+                    "Computer Science Student @UWO",
+                  ]}
+                  loop={0}
+                  cursor
+                  cursorStyle="|"
+                  typeSpeed={100}
+                  deleteSpeed={60}
+                  delaySpeed={1000}
+                />
+              </span>
+            </h1>
           </div>
         </div>
         <div>
