@@ -6,7 +6,7 @@ import { Typewriter } from "react-simple-typewriter";
 function Homebody() {
   return (
     <>
-      <div className="flex min-w-full min-h-[600px] justify-around mt-[100px]">
+      <div className="flex min-w-full h-screen justify-around mt-[100px]">
         <div>
           <motion.h1
             initial={{ opacity: 0 }}
