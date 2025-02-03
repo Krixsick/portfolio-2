@@ -1,4 +1,4 @@
-import linus from "../assets/Linus.png";
+import linus from "../assets/linus.png";
 import { motion } from "framer-motion";
 
 function About() {
