@@ -3,3 +3,93 @@
 .btn {
   @apply bg-[#fefae0] px-6 py-3 rounded-lg font-semibold cursor-pointer;
 }
+
+/* Experience CSS */
+.timeline {
+  @apply m-[10px] max-w-7xl relative z-0;
+}
+
+.timeline-container {
+  @apply py-[10px] px-[50px] relative w-[50%] opacity-0;
+  animation: movedown 1s linear forwards;
+}
+
+@keyframes movedown {
+  0% {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.timeline-container:nth-child(1) {
+  animation-delay: 0s;
+}
+.timeline-container:nth-child(2) {
+  animation-delay: 1s;
+}
+.timeline-container:nth-child(3) {
+  animation-delay: 2s;
+}
+.timeline-container:nth-child(4) {
+  animation-delay: 4s;
+}
+.timeline-container:nth-child(5) {
+  animation-delay: 5s;
+}
+
+.timeline-textbook {
+  @apply py-[20px] px-[30px] bg-[#fefae0] relative text-base rounded-lg;
+}
+
+.timeline-left {
+  @apply left-[-1%];
+}
+
+.timeline-right {
+  @apply left-[51%];
+}
+
+.timeline-picture {
+  @apply absolute right-[-6%] top-[32px] z-10;
+}
+
+.timeline-right .timeline-picture {
+  @apply left-[-6%];
+}
+
+.timeline::after {
+  content: "";
+  animation: moveline 6s linear forwards;
+  @apply absolute w-[6px] h-full bg-[#d4a373] top-0 left-1/2
+    transform -translate-x-1/2 z-[-1];
+}
+
+@keyframes moveline {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+.left-container-arrow {
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #fefae0;
+  @apply w-0 h-0 absolute top-[28px] z-1 right-[-15px];
+}
+
+.right-container-arrow {
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #fefae0;
+  @apply w-0 h-0 absolute top-[28px] z-1 left-[-15px];
+}
+
+.timeline-title {
+  @apply font-semibold text-2xl;
+}
