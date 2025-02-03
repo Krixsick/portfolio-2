@@ -129,7 +129,7 @@ function Projects() {
           </div>
         </div>
       </motion.div>
-      {/*Third Box */}
+      {/*Third Box I set */}
       <motion.div
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 1 }}
