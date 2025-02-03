@@ -1,4 +1,4 @@
-import snoopy2 from "../assets/snoopy2.webp";
+import linus from "../assets/Linus.png";
 import { motion } from "framer-motion";
 
 function About() {
@@ -7,7 +7,7 @@ function About() {
       {/*first grid item*/}
       <div className="flex justify-center">
         <motion.img
-          src={snoopy2}
+          src={linus}
           alt="Snoopy"
           className="max-w-[400px] max-h-[400px] rounded-3xl shadow-lg "
           whileHover={{ scale: 1.1 }}

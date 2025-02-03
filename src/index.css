@@ -35,10 +35,10 @@
   animation-delay: 2s;
 }
 .timeline-container:nth-child(4) {
-  animation-delay: 4s;
+  animation-delay: 3s;
 }
 .timeline-container:nth-child(5) {
-  animation-delay: 5s;
+  animation-delay: 4s;
 }
 
 .timeline-textbook {
@@ -63,7 +63,7 @@
 
 .timeline::after {
   content: "";
-  animation: moveline 6s linear forwards;
+  animation: moveline 4s linear forwards;
   @apply absolute w-[6px] h-full bg-[#d4a373] top-0 left-1/2
     transform -translate-x-1/2 z-[-1];
 }
@@ -92,4 +92,21 @@
 
 .timeline-title {
   @apply font-semibold text-2xl;
+}
+
+/* Projects CSS */
+.project-fadein {
+  animation: fadeIn 1s linear forwards;
+  @apply opacity-0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
