@@ -40,121 +40,19 @@ function About() {
         </div>
       </div>
       {/*fourth grid item*/}
-      <div className="flex justify-center items-center w-full mt-[50px]">
-        <div className="flex justify-between items-center w-3/4 h-full bg-[#fefae0] gap-[10px] rounded-3xl">
-          <div className="flex flex-col w-1/2 m-[20px] gap-[15px] h-full">
-            {/* First progress bar */}
-            <div className="flex justify-between mb-1 mt-[10px]">
-              <span className="text-base font-medium text-blue-700 dark:text-black">
-                Python
-              </span>
-              <span className="text-sm font-medium text-blue-700 dark:text-black">
-                90%
-              </span>
-            </div>
-            <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-              <div
-                className="bg-blue-600 h-2.5 rounded-full"
-                style={{ width: "90%" }}
-              ></div>
-            </div>
 
-            {/* Second progress bar */}
-            <div className="flex justify-between mb-1 mt-[10px]">
-              <span className="text-base font-medium text-blue-700 dark:text-black">
-                React
-              </span>
-              <span className="text-sm font-medium text-blue-700 dark:text-black">
-                75%
-              </span>
-            </div>
-            <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-              <div
-                className="bg-blue-600 h-2.5 rounded-full"
-                style={{ width: "70%" }}
-              ></div>
-            </div>
-            {/* Third progress bar */}
-            <div className="flex justify-between mb-1 mt-[10px]">
-              <span className="text-base font-medium text-blue-700 dark:text-black">
-                React
-              </span>
-              <span className="text-sm font-medium text-blue-700 dark:text-black">
-                75%
-              </span>
-            </div>
-            <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-              <div
-                className="bg-blue-600 h-2.5 rounded-full"
-                style={{ width: "70%" }}
-              ></div>
-            </div>
-          </div>
-
-          {/* Right Side progress bar */}
-          <div className="flex flex-col w-1/2 m-[20px] gap-[15px] h-full">
-            {/* First progress bar */}
-            <div className="flex justify-between mb-1 mt-[10px]">
-              <span className="text-base font-medium text-blue-700 dark:text-black">
-                Firebase
-              </span>
-              <span className="text-sm font-medium text-blue-700 dark:text-black">
-                75%
-              </span>
-            </div>
-            <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-              <div
-                className="bg-blue-600 h-2.5 rounded-full"
-                style={{ width: "75%" }}
-              ></div>
-            </div>
-
-            {/* Second progress bar */}
-            <div className="flex justify-between mb-1 mt-[10px]">
-              <span className="text-base font-medium text-blue-700 dark:text-black">
-                Java
-              </span>
-              <span className="text-sm font-medium text-blue-700 dark:text-black">
-                75%
-              </span>
-            </div>
-            <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-              <div
-                className="bg-blue-600 h-2.5 rounded-full"
-                style={{ width: "75%" }}
-              ></div>
-            </div>
-
-            {/* Third progress bar */}
-            <div className="flex justify-between mb-1 mt-[10px]">
-              <span className="text-base font-medium text-blue-700 dark:text-black">
-                NodeJS
-              </span>
-              <span className="text-sm font-medium text-blue-700 dark:text-black">
-                75%
-              </span>
-            </div>
-            <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-              <div
-                className="bg-blue-600 h-2.5 rounded-full"
-                style={{ width: "75%" }}
-              ></div>
-            </div>
-          </div>
-        </div>
-      </div>
       {/* Facts Part */}
-      <div className="flex justify-around align-center mt-[50px]">
+      <div className="flex justify-around align-center mt-[50px] h-[100%]">
         <motion.div
           whileHover={{ scale: 1.1 }}
-          className="flex rounded-[30px] w-lg h-7/10 flex-column bg-[#fefae0] flex-col shadow-2xl justify-center items-center"
+          className="flex rounded-[30px] w-lg h-full flex-column bg-[#fefae0] flex-col shadow-2xl justify-center items-center"
         >
           <div className="flex h-2/15 w-2xs justify-center">
             <motion.h1
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1.5 }}
-              className="text-4xl font-bold font-sans"
+              className="text-4xl font-bold font-sans pt-[6px]"
             >
               Hobbies
             </motion.h1>
@@ -167,7 +65,7 @@ function About() {
         </motion.div>
         <motion.div
           whileHover={{ scale: 1.1 }}
-          className="flex rounded-[30px] w-lg h-7/10 flex-column bg-[#fefae0] flex-col shadow-2xl justify-center items-center"
+          className="flex rounded-[30px] w-lg h-full flex-column bg-[#fefae0] flex-col shadow-2xl justify-center items-center"
         >
           <div className="flex h-2/15 w-2xs justify-center">
             <motion.h1
