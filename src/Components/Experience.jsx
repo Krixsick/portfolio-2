@@ -60,7 +60,7 @@ function Experience() {
           </div>
           <div className="timeline-textbook">
             <h2 className="timeline-title">JFSS Investment Club</h2>
-            <small>2018-2092</small>
+            <small>2018-2019</small>
             <p>
               I was an executive of the JFSS Investment Club, helping with
               planning activities and taking meeting notes.
